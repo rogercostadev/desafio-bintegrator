@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Desafio Business Integrator 2022</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&family=Sora:wght@200;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <div class="dash-wrapper">
+
+    <aside class="dash-sidebar nav">
+
+      <div class="dash-sidebar-wrapper">
+
+        <div class="dash-logo-wrapper">
+          <span>Cloudy</span>
+        </div>
+
+        <nav class="dash-nav">
+          <ul class="list">
+            <li class="item">
+              <a href="#" class="link active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                Painel
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                Favoritos
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                Compartilhados
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
+                  <polyline points="3 6 5 6 21 6"></polyline>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                </svg>
+                Lixeira
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+                Configurações
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                Ajuda
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+
+    <main class="dash-content">
+
+      <header class="dash-header">
+        <form action="" class="search-files-form">
+          <button class="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <input type="text" class="input-text" placeholder="Buscar arquivos">
+        </form>
+        <div class="profile-infos">
+          <div class="notification-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A4B6C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <span class="circle"></span>
+
+            <div class="notification">
+              <h2 class="title">Notificações</h2>
+              <div class="item">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A4B6C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 16 16 12 12 8"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </div>
+              <div class="item">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A4B6C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 16 16 12 12 8"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="settings-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A4B6C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </div>
+          <div class="profile-wrapper">
+            <div class="photo-wrapper">
+              <img src="./assets/cleo.jpg" alt="Cleo" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="files-listing">
+        <div class="title-wrapper">
+          <h2 class="title">Minhas Pastas</h2>
+          <button class="switch-view">Detalhes</button>
+        </div>
+
+        <ul class="cards">
+          <li class="item">
+            <div class="dots-wrapper">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <img src="./assets/folder.png" alt="Pasta">
+            <h3 class="title">Mídia</h3>
+            <div class="progress-bar">
+              <span class="progress-bg"></span>
+              <span class="progress-move"></span>
+            </div>
+            <div class="space-wrapper">
+              <span class="space used">12.6 GB</span>
+              <span class="space total">20 GB</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="dots-wrapper">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <img src="./assets/folder.png" alt="Pasta">
+            <h3 class="title">Audio</h3>
+            <div class="progress-bar">
+              <span class="progress-bg"></span>
+              <span class="progress-move"></span>
+            </div>
+            <div class="space-wrapper">
+              <span class="space used">12.6 GB</span>
+              <span class="space total">20 GB</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="dots-wrapper">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <img src="./assets/folder.png" alt="Pasta">
+            <h3 class="title">Documentos</h3>
+            <div class="progress-bar">
+              <span class="progress-bg"></span>
+              <span class="progress-move"></span>
+            </div>
+            <div class="space-wrapper">
+              <span class="space used">12.6 GB</span>
+              <span class="space total">20 GB</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="dots-wrapper">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <img src="./assets/folder.png" alt="Pasta">
+            <h3 class="title">Vídeos</h3>
+            <div class="progress-bar">
+              <span class="progress-bg"></span>
+              <span class="progress-move"></span>
+            </div>
+            <div class="space-wrapper">
+              <span class="space used">12.6 GB</span>
+              <span class="space total">20 GB</span>
+            </div>
+          </li>
+          <li class="item">
+            <div class="dots-wrapper">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <img src="./assets/folder.png" alt="Pasta">
+            <h3 class="title">Imagens</h3>
+            <div class="progress-bar">
+              <span class="progress-bg"></span>
+              <span class="progress-move"></span>
+            </div>
+            <div class="space-wrapper">
+              <span class="space used">12.6 GB</span>
+              <span class="space total">20 GB</span>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="files-listing">
+        <div class="title-wrapper">
+          <h2 class="title">Minhas Pastas</h2>
+          <button class="switch-view">Detalhes</button>
+        </div>
+
+        <ul class="list">
+          <li class="item">
+            <div class="icon-wrapper">
+              <img src="./assets/08.png" alt="">
+            </div>
+            <span class="filename">Imagem05.jpeg</span>
+            <span class="filedate">10 Jun 2021</span>
+            <span class="filesize">1,5 MB</span>
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="icon-wrapper">
+              <img src="./assets/09.png" alt="">
+            </div>
+            <span class="filename">Chitãozinho&Xororó.flac</span>
+            <span class="filedate">10 Jun 2021</span>
+            <span class="filesize">40,5 MB</span>
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="icon-wrapper">
+              <img src="./assets/08.png" alt="">
+            </div>
+            <span class="filename">Imagem05.jpeg</span>
+            <span class="filedate">10 Jun 2021</span>
+            <span class="filesize">1,5 MB</span>
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </li>
+
+          <li class="item hided">
+            <div class="icon-wrapper">
+              <img src="./assets/08.png" alt="">
+            </div>
+            <span class="filename">Imagem05.jpeg</span>
+            <span class="filedate">10 Jun 2021</span>
+            <span class="filesize">1,5 MB</span>
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </li>
+
+          <li class="item hided">
+            <div class="icon-wrapper">
+              <img src="./assets/09.png" alt="">
+            </div>
+            <span class="filename">Chitãozinho&Xororó.flac</span>
+            <span class="filedate">10 Jun 2021</span>
+            <span class="filesize">40,5 MB</span>
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </li>
+
+          <li class="item hided">
+            <div class="icon-wrapper">
+              <img src="./assets/08.png" alt="">
+            </div>
+            <span class="filename">Imagem05.jpeg</span>
+            <span class="filedate">10 Jun 2021</span>
+            <span class="filesize">1,5 MB</span>
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </li>
+
+          <div class="show-more-wrapper">
+            <button class="show-more-btn">Mostrar mais</button>
+          </div>
+
+        </ul>
+      </section>
+
+    </main>
+
+
+    <aside class="dash-sidebar settings">
+      <div class="dash-sidebar-wrapper">
+
+
+        <h2 class="title">Armazenamento</h2>
+
+        <div class="graphic-wrapper">
+          <img src="./assets/grafico.png" alt="Grafico" style="max-width: 220px">
+        </div>
+
+        <div class="hard-disk-space">
+          <span class="used">32 GB</span>
+          <span class="total">de 45 GB de capacidade</span>
+        </div>
+
+        <ul class="type-of-files-list">
+          <li class="item">
+            <img src="./assets/01.png" alt="">
+            <div class="type-name-wrapper">
+              <span class="typename">Imagens</span>
+              <span class="total-files">356 arquivos</span>
+            </div>
+            <span class="space-used">3.4 GB</span>
+          </li>
+          <li class="item">
+            <img src="./assets/02.png" alt="">
+            <div class="type-name-wrapper">
+              <span class="typename">Documentos</span>
+              <span class="total-files">356 arquivos</span>
+            </div>
+            <span class="space-used">3.4 GB</span>
+          </li>
+          <li class="item">
+            <img src="./assets/03.png" alt="">
+            <div class="type-name-wrapper">
+              <span class="typename">Audio</span>
+              <span class="total-files">356 arquivos</span>
+            </div>
+            <span class="space-used">3.4 GB</span>
+          </li>
+          <li class="item">
+            <img src="./assets/04.png" alt="">
+            <div class="type-name-wrapper">
+              <span class="typename">Vídeos</span>
+              <span class="total-files">356 arquivos</span>
+            </div>
+            <span class="space-used">3.4 GB</span>
+          </li>
+          <li class="item">
+            <img src="./assets/05.png" alt="">
+            <div class="type-name-wrapper">
+              <span class="typename">Outros arquivos</span>
+              <span class="total-files">356 arquivos</span>
+            </div>
+            <span class="space-used">3.4 GB</span>
+          </li>
+        </ul>
+
+
+      </div>
+    </aside>
+
+
+  </div>
+
+  <script>
+    const showMoreBtn = document.querySelector('.show-more-btn');
+    const showMoreWrapper = document.querySelector('.show-more-wrapper');
+
+    showMoreBtn.addEventListener('click', function () {
+      showMoreWrapper.classList.add('hided');
+
+      const hided = document.querySelectorAll('.files-listing .item.hided');
+      hided.forEach(function (item) {
+        item.classList.remove('hided');
+      })
+    })
+
+
+    const notificationWrapper = document.querySelector('.notification-wrapper');
+    notificationWrapper.addEventListener('click', function (e) {
+      e.preventDefault();
+      notificationWrapper.classList.toggle('active');
+    });
+
+    const dashSidebarNav = document.querySelector('.dash-sidebar.nav');
+    dashSidebarNav.addEventListener('click', function (e) {
+      e.preventDefault();
+      dashSidebarNav.classList.toggle('active');
+    });
+
+    const dashSidebarSettings = document.querySelector('.dash-sidebar.settings');
+    dashSidebarSettings.addEventListener('click', function (e) {
+      e.preventDefault();
+      dashSidebarSettings.classList.toggle('active');
+    });
+  </script>
+
+</body>
+
+</html>
